@@ -40,9 +40,10 @@ s.n. dasgupta
 ^d
 ```
 ### Display the content of the files
-cat < file1
+cat file1
 ## OUTPUT
 
+![image](https://github.com/Kamal-Raj-A/OS-Linux-commands-Shell-script/assets/145742556/aa31a925-7178-4e97-ad97-81ac28f76950)
 
 
 cat < file2
