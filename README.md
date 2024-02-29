@@ -1,4 +1,4 @@
-p# OS-Linux-commands-Shell-scripting
+# OS-Linux-commands-Shell-scripting
 Operating systems Lab exercise
 # Linux commands-Shell scripting
 Linux commands-Shell scripting
@@ -510,11 +510,22 @@ www.mrcet.com
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-bench.py
-hello.c
-hello.js
-readme.txt
+tar: can't open 'bench.py': I/O error
+file1
+file21
+file23
+tar: can't open 'hello.c': I/O error
+tar: can't open 'hello.js': I/O error
+newfile
+tar: can't open 'readme.txt': I/O error
 urllist.txt
+tar: error exit delayed from previous errors
+
+mkdir backupdir
+ 
+mv backup.tar backupdir
+ 
+tar -tvf backup.tar
 ## OUTPUT
 -rw-r--r-- root/0         0 2024-02-16 15:53:43 file1
 -rw-r--r-- root/0       155 2024-02-16 18:49:10 file21
@@ -524,11 +535,14 @@ urllist.txt
 
 tar -xvf backup.tar
 ## OUTPUT
-bench.py
-hello.c
-hello.js
-readme.txt
+file1
+file21
+file23
+newfile
 urllist.txt
+gzip backup.tar
+
+ls .gz
 ## OUTPUT
  
 gunzip backup.tar.gz
